@@ -45,6 +45,8 @@ A Chrome extension that adds a "Copy Diff" button to GitHub Pull Requests, allow
 4. **Click to copy** - The entire PR diff is now in your clipboard in markdown format
 5. **Paste into your favorite AI tool** for instant code review
 
+![Copy Diff Button Example](images/example.png)
+
 ## ⚙️ Configuration
 
 ### Customizing the AI Prompt
@@ -89,7 +91,6 @@ The extension copies PR information in this structure:
 
 ```diff
 [Full PR diff with + and - indicators]
-```
 ```
 
 ## 🛠️ Technical Details
