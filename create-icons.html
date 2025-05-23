@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate Icons</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+    function createIcon(size) {
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+      
+      canvas.width = size;
+      canvas.height = size;
+      
+      // Background
+      ctx.fillStyle = '#2ea44f';
+      ctx.fillRect(0, 0, size, size);
+      
+      // Text
+      ctx.fillStyle = 'white';
+      ctx.font = `bold ${size * 0.5}px Arial`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('PR', size / 2, size / 2);
+      
+      // Download
+      const link = document.createElement('a');
+      link.download = `icon${size}.png`;
+      link.href = canvas.toDataURL();
+      link.click();
+    }
+    
+    // Generate all icon sizes
+    setTimeout(() => createIcon(16), 100);
+    setTimeout(() => createIcon(48), 200);
+    setTimeout(() => createIcon(128), 300);
+  </script>
+  <p>Open this file in a browser to generate the icons, then move them to the icons folder.</p>
+</body>
+</html>

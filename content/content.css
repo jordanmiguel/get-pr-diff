@@ -1,0 +1,4 @@
+/* Ensure the button uses GitHub's default styles */
+.btn.mr-2 {
+  margin-right: 8px;
+}

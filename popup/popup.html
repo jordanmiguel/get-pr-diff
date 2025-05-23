@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1>PR Diff to Markdown</h1>
+    
+    <div class="form-group">
+      <label for="systemPrompt">System Prompt:</label>
+      <textarea 
+        id="systemPrompt" 
+        rows="12" 
+        placeholder="Enter the system prompt that will be prepended to the PR diff..."
+      ></textarea>
+    </div>
+    
+    <div class="markdown-hint">
+      💡 Supports markdown: **bold**, *italic*, `code`, ```code blocks```, headers (#, ##, ###), bullet lists (-)
+    </div>
+    
+    <button id="saveButton" class="save-button">Save Settings</button>
+    
+    <div id="status" class="status"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
