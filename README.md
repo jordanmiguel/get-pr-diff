@@ -26,12 +26,7 @@ A Chrome extension that adds a "Copy Diff" button to GitHub Pull Requests, allow
    cd get-pr-diff
    ```
 
-2. **Generate icon files**
-   - Open `create-icons.html` in your browser
-   - The icons will be automatically downloaded
-   - Move the downloaded PNG files to the `icons/` folder
-
-3. **Install in Chrome**
+2. **Install in Chrome**
    - Open Chrome and go to `chrome://extensions/`
    - Enable "Developer mode" (toggle in top right)
    - Click "Load unpacked"
